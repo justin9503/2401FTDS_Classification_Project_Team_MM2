@@ -93,6 +93,15 @@ The following machine learning models were used:
 **3.** Sinenkosi Sikhakhane/ sikhakhanesnenkosi@gmail.com
 **4.** Ntokozo Sbusiso Hadebe/ bighope95@gmail.com
 **6.** Kentse Mphahlele/ kentsemphahlele@gmail.com
+## 7. Team Members<a class="anchor" id="team-members"></a>
+
+| Name                                                                                        |  Email              
+|---------------------------------------------------------------------------------------------|--------------------             
+| [Justin Ndivhuwo Tshifaro                                                |njtshifaro@gmail.com
+| [Sinenkosi Sikhakhane                                                                                  | sikhakhanesnenkosi@gmail.com
+| [Obed Segwate Mabowa                                                                            | mabowaobed98@gmail.com
+| [Ntokozo Sbusiso Hadebe                                                | bighope95@gmail.com
+| [Kentse Mphahlele                                      | kentsemphahlele@gmail.com
 
 ##  Conclusion
 This project was a success in achieving the goal of using machine learning to categorize news articles into their respective domains. Based on the results of the evaluation, Naive Bayes model demonstrated the highest accuracy and F1 score which makes this model suitable for this task. The solid classification model constructed in this project can improve the existing content management systems, facilitate user interactions of news, and empower advertisers’ targeting.
