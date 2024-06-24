@@ -1,145 +1,98 @@
-##### **Please note**: Download the repository as a zipped folder, create a private repository, and upload the content to it. This way, you can collaborate with your teammates effectively.
+# Multi-Domain News Article Classification: Leveraging Machine Learning for Enhanced Content Categorization
 
-## 2401FTDS_Classification_Project
+<img src="https://png.pngtree.com/thumb_back/fh260/background/20230910/pngtree-newspaper-image_13202670.png">
 
-# Analysing News Articles Dataset
+## Table of Content:
+* **1.** Project Overview
+* **2.** Importing Packages
+* **3.** Loading Data
+* **4.** Data Cleaning
+* **5.** Data Prepocessing
+* **6.** Exploratory Data Analysis (EDA)
+* **7.** Modelling
+* **8.** Model Evaluations Metrics
+* **9.**. Model Performance analysis
+* **10.** Recommendations
+* **11.** Reference
+* **12.** Team Mmembers
+* **13.** Conclusion 
 
+## 1.  Project Overview
+## Project Overview: Classifying News Articles Across Diverse Domains Using Machine Learning
 
-![](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](URL_TO_YOUR_APP)
+In the digital age, the volume of news articles published online has increased exponentially, covering a wide range of topics and domains such as Business, Technology, Sports, Education, and Entertainment. This project aims to address the challenge of categorizing news articles into their respective domains using advanced machine learning techniques. By developing a robust classification model, we can enhance content management systems, improve user experience on news platforms, and enable more effective targeting for advertisers.
 
-<div id="main image" align="center">
-  <img src="https://github.com/ereshia/2401FTDS_Classification_Project/blob/main/announcement-article-articles-copy-coverage.jpg" width="550" height="300" alt=""/>
-</div>
+## 2. Importing Packages
+* **Data Loading, Manipulation, and Analysis:** Pandas, CSV, String, re, NLTK, WordCloud, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
 
-## Table of contents
-* [1. Project Overview](#project-description)
-* [2. Dataset](#dataset)
-* [3. Packages](#packages)
-* [4. Environment](#environment)
-* [5. MLFlow](#mlflow)
-* [6. Streamlit](#streamlit)
-* [7. Team Members](#team-members)
+## 3. Loading Data
 
-## 1. Project Overview <a class="anchor" id="project-description"></a>
+The data used for this project is located in the Data folder, which contains two files: test.csv and train.csv. The data was loaded into Pandas DataFrames using the pd.read_csv() function and referred to as train_data and test_data. The index_col=False parameter was implemented to demonstrate the column index in the DataFrame.
 
-Your team has been hired as data science consultants for a news outlet to create classification models using Python and deploy it as a web application with Streamlit. 
-The aim is to provide you with a hands-on demonstration of applying machine learning techniques to natural language processing tasks.  This end-to-end project encompasses the entire workflow, including data loading, preprocessing, model training, evaluation, and final deployment. The primary stakeholders for the news classification project for the news outlet could include the editorial team, IT/tech support, management, readers, etc. These groups are interested in improved content categorization, operational efficiency, and enhanced user experience.
+## 4.  Data Cleaning
 
+Data cleaning involves correcting or removing incorrect, corrupted, duplicate, or incomplete data within a dataset. Techniques used include filling missing values, removing outliers, and standardizing data formats to ensure accuracy and reliability.
 
-## 2. Dataset <a class="anchor" id="dataset"></a>
-The dataset is comprised of news articles that need to be classified into categories based on their content, including `Business`, `Technology`, `Sports`, `Education`, and `Entertainment`. You can find both the `train.csv` and `test.csv` datasets [here](https://github.com/ereshia/2401FTDS_Classification_Project/tree/main/Data/processed).
+## 5.  Data Preprocessing
+Data preprocessing involves preparing text data for analysis by:
 
-**Dataset Features:**
-| **Column**                                                                                  | **Description**              
-|---------------------------------------------------------------------------------------------|--------------------   
-| Headlines   | 	The headline or title of the news article.
-| Description | A brief summary or description of the news article.
-| Content | The full text content of the news article.
-| URL | The URL link to the original source of the news article.
-| Category | The category or topic of the news article (e.g., business, education, entertainment, sports, technology).
+* Downloading NLTK packages
+* Loading datasets
+* Cleaning text by removing noise, punctuation, converting to lowercase, and removing contractions
+* Tokenizing text, removing stop words, and performing stemming and lemmatization
+* Reassembling processed text into strings, with an option to save the cleaned datasets to CSV files
 
-## 3. Packages <a class="anchor" id="packages"></a>
+## 6. Exploratory Data Analysis (EDA)
+EDA helps in understanding the variables and relationships within the dataset through:
 
-To carry out all the objectives for this repo, the following necessary dependencies were loaded:
-+ `Pandas 2.2.2` and `Numpy 1.26`
-+ `Matplotlib 3.8.4`
- 
+* Investigating and summarizing the DataFrame's main characteristics using data visualization methods and statistical analyses
+* Drawing meaningful insights to guide further research and data-driven decision making
 
-## 4. Environment <a class="anchor" id="environment"></a>
+## 7. Modelling
+The following machine learning models were used:
 
-It's highly recommended to use a virtual environment for your projects, there are many ways to do this; we've outlined one such method below. Make sure to regularly update this section. This way, anyone who clones your repository will know exactly what steps to follow to prepare the necessary environment. The instructions provided here should enable a person to clone your repo and quickly get started.
+* Logistic Regression
+* Naive Bayes
+* Support Vector Machine (SVM)
+* Random Forest
+* Neural Network (MLPClassifier)
 
-### Create the new evironment - you only need to do this once
+## 8. Model Evaluation Metrics
 
-```bash
-# create the conda environment
-conda create --name <env>
-```
+* Accuracy: The ratio of correctly predicted instances to the total instances.
+* Precision: The ratio of correctly predicted positive observations to the total predicted positives.
+* Recall: The ratio of correctly predicted positive observations to the all observations in actual class.
+* F1 Score: The weighted average of Precision and Recall.
 
-### This is how you activate the virtual environment in a terminal and install the project dependencies
+## 9. Model Performance Analysis
 
-```bash
-# activate the virtual environment
-conda activate <env>
-# install the pip package
-conda install pip
-# install the requirements for this project
-pip install -r requirements.txt
-```
-## 5. MLFlow<a class="anchor" id="mlflow"></a>
+* Logistic Regression: High accuracy and F1 score, balanced precision, and recall across all classes.
+* Naive Bayes: Highest accuracy and F1 score, excellent precision and recall across all classes.
+* SVM: Strong performance with high accuracy and F1 score, consistent across most classes.
+* Random Forest: Decent accuracy and F1 score, good performance in some classes but slightly lower metrics compared to Naive Bayes and Logistic Regression.
+* Recommendation: Naive Bayes stands out as the top-performing model, achieving the highest accuracy and F1 score, making it the recommended choice for this classification task based on the provided data and evaluation results.
 
-MLOps, which stands for Machine Learning Operations, is a practice focused on managing and streamlining the lifecycle of machine learning models. The modern MLOps tool, MLflow is designed to facilitate collaboration on data projects, enabling teams to track experiments, manage models, and streamline deployment processes. For experimentation, testing, and reproducibility of the machine learning models in this project, you will use MLflow. MLflow will help track hyperparameter tuning by logging and comparing different model configurations. This allows you to easily identify and select the best-performing model based on the logged metrics.
+## 10. Recommendations
 
-- Please have a look here and follow the instructions: https://www.mlflow.org/docs/2.7.1/quickstart.html#quickstart
+**1.** Expand Dataset: Collect more data from other sources so as to enhance the model’s cross validation.
+**2.** Integrate Metadata: I would use other metadata to augment the feature set (for instance, date of publication, the author and so on).
+**3.** Ensemble Methods: Use concept weighting by combining many models into one, approaching the matter of combining from different angles and testing combinations of various methods.
 
-## 6. Streamlit<a class="anchor" id="streamlit"></a>
+## 11. References
 
-### What is Streamlit?
+**1.** Logistic Regression
+**2.** Random Forest
+**3.** EDA Techniques
+**4.** Data Cleaning Techniques
 
-[Streamlit](https://www.streamlit.io/)  is a framework that acts as a web server with dynamic visuals, multiple responsive pages, and robust deployment of your models.
+## 12. Team Members
 
-In its own words:
-> Streamlit ... is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours!  All in pure Python. All for free.
+**1.** Obed Segwate Mabowa/ mabowaobed98@gmail.com
+**2.** Ndivhuwo Justin Tshifaro/ njtshifaro@gmail.com
+**3.** Sinenkosi Sikhakhane/ sikhakhanesnenkosi@gmail.com
+**4.** Ntokozo Sbusiso Hadebe/ bighope95@gmail.com
+**6.** Kentse Mphahlele/ kentsemphahlele@gmail.com
 
-> It’s a simple and powerful app model that lets you build rich UIs incredibly quickly.
-
-[Streamlit](https://www.streamlit.io/)  takes away much of the background work needed in order to get a platform which can deploy your models to clients and end users. Meaning that you get to focus on the important stuff (related to the data), and can largely ignore the rest. This will allow you to become a lot more productive.  
-
-##### Description of files
-
-For this repository, we are only concerned with a single file:
-
-| File Name              | Description                       |
-| :--------------------- | :--------------------             |
-| `base_app.py`          | Streamlit application definition. |
-
-
-#### 6.1 Running the Streamlit web app on your local machine
-
-As a first step to becoming familiar with our web app's functioning, we recommend setting up a running instance on your own local machine. To do this, follow the steps below by running the given commands within a Git bash (Windows), or terminal (Mac/Linux):
-
-- Ensure that you have the prerequisite Python libraries installed on your local machine:
-
- ```bash
- pip install -U streamlit numpy pandas scikit-learn
- ```
-
-- Navigate to the base of your repo where your base_app.py is stored, and start the Streamlit app.
-
- ```bash
- cd 2401FTDS_Classification_Project/Streamlit/
- streamlit run base_app.py
- ```
-
- If the web server was able to initialise successfully, the following message should be displayed within your bash/terminal session:
-
-```
-  You can now view your Streamlit app in your browser.
-
-    Local URL: http://localhost:8501
-    Network URL: http://192.168.43.41:8501
-```
-You should also be automatically directed to the base page of your web app. This should look something like:
-
-<div id="s_image" align="center">
-  <img src="https://github.com/ereshia/2401FTDS_Classification_Project/blob/main/Streamlit_image.png" width="850" height="400" alt=""/>
-</div>
-
-Congratulations! You've now officially deployed your first web application!
-
-#### 6.2 Deploying your Streamlit web app
-
-- To deploy your app for all to see, click on `deploy`.
-  
-- Please note: If it's your first time deploying it will redirect you to set up an account first. Please follow the instructions.
-
-## 7. Team Members<a class="anchor" id="team-members"></a>
-
-| Name                                                                                        |  Email              
-|---------------------------------------------------------------------------------------------|--------------------             
-| [Marc Marais](https://github.com/marcmarais)                                                | mmarais@sandtech.com
-| [James Beta](https://github.com/James-Beta)                                                                                  | jbeta@sandtech.com
-| [Oladare Adekunle](https://github.com/DareSandtech)                                                                            | oadekunle@sandtech.com
-| [Ereshia Gabier](https://github.com/ereshia)                                                | egabier@sandtech.com
-| [Annegret Muller](https://github.com/AnnegretExplore)                                       | amuller@sandtech.com
-| [Zintle Faltein-Maqubela](https://github.com/ZintleFaltein)                                                                   | zfaltein-maqubela@sandtech.com
+##  Conclusion
+This project was a success in achieving the goal of using machine learning to categorize news articles into their respective domains. Based on the results of the evaluation, Naive Bayes model demonstrated the highest accuracy and F1 score which makes this model suitable for this task. The solid classification model constructed in this project can improve the existing content management systems, facilitate user interactions of news, and empower advertisers’ targeting.
