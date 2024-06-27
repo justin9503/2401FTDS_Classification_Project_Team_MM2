@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Tshifaro%20Justin/OneDrive/Desktop/ExploreAI/2401FTDS_Classification_Project_Team_MM2/mlruns/0/24c6f77ebbb646e7844aa945377cbb76/artifacts
+end_time: 1719481378559
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 24c6f77ebbb646e7844aa945377cbb76
+run_name: XGBoost
+run_uuid: 24c6f77ebbb646e7844aa945377cbb76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719481161083
+status: 3
+tags: []
+user_id: Tshifaro Justin

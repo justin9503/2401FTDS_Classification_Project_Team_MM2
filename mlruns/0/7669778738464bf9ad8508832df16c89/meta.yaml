@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Tshifaro%20Justin/OneDrive/Desktop/ExploreAI/2401FTDS_Classification_Project_Team_MM2/mlruns/0/7669778738464bf9ad8508832df16c89/artifacts
+deleted_time: 1719487945682
+end_time: 1719479671324
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7669778738464bf9ad8508832df16c89
+run_name: Naive Bayes
+run_uuid: 7669778738464bf9ad8508832df16c89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719479663999
+status: 4
+tags: []
+user_id: Tshifaro Justin
