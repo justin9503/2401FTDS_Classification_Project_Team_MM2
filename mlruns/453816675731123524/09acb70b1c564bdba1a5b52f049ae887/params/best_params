@@ -1,1 +1,0 @@
-{'model__solver': 'adam', 'model__hidden_layer_sizes': (100,), 'model__activation': 'relu'}
