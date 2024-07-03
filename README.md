@@ -1,4 +1,4 @@
-# Multi-Domain News Article Classification: Leveraging Machine Learning for Enhanced Content Categorization
+# Maji_dongo's News_24
 
 <img src="https://png.pngtree.com/thumb_back/fh260/background/20230910/pngtree-newspaper-image_13202670.png">
 
@@ -18,7 +18,7 @@
 * **13.** Conclusion 
 
 ## 1.  Project Overview
-## Project Overview: Classifying News Articles Across Diverse Domains Using Machine Learning
+## Project Overview: Maji_ndongo's News_24
 
 In the digital age, the volume of news articles published online has increased exponentially, covering a wide range of topics and domains such as Business, Technology, Sports, Education, and Entertainment. This project aims to address the challenge of categorizing news articles into their respective domains using advanced machine learning techniques. By developing a robust classification model, we can enhance content management systems, improve user experience on news platforms, and enable more effective targeting for advertisers.
 
