@@ -1,0 +1,15 @@
+artifact_uri: file:///content/mlruns/519335988776597110/a0f2abd2892348d98aabd2bc13b9b927/artifacts
+end_time: 1719998928444
+entry_point_name: ''
+experiment_id: '519335988776597110'
+lifecycle_stage: active
+run_id: a0f2abd2892348d98aabd2bc13b9b927
+run_name: Bagging
+run_uuid: a0f2abd2892348d98aabd2bc13b9b927
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719997039562
+status: 3
+tags: []
+user_id: root
