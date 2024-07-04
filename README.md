@@ -1,4 +1,4 @@
-# Maji_dongo's News_24
+# Maji_Ndongo's News_24
 
 <img src="https://png.pngtree.com/thumb_back/fh260/background/20230910/pngtree-newspaper-image_13202670.png">
 
