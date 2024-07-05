@@ -14,8 +14,9 @@
 * **9.**. Model Performance analysis
 * **10.** Recommendations
 * **11.** Reference
-* **12.** Team Mmembers
-* **13.** Conclusion 
+* **12.** Link to Our streamlit Application
+* **13.** Team Mmembers
+* **14.** Conclusion 
 
 ## 1.  Project Overview
 ## Project Overview: Maji_ndongo's News_24
@@ -56,7 +57,6 @@ The following machine learning models were used:
 * Naive Bayes
 * Support Vector Machine (SVM)
 * Random Forest
-* Neural Network (MLPClassifier)
 
 ## 8. Model Evaluation Metrics
 
@@ -86,7 +86,10 @@ The following machine learning models were used:
 **3.** EDA Techniques
 **4.** Data Cleaning Techniques
 
-## 12. Team Members<a class="anchor" id="team-members"></a>
+**12** https://justin9503-news-classifier-base-app-h5anzs.streamlit.app/ 
+## The App was delivered to the  maji Ngondo Stakeholders, for teting of the models and Classifications.
+
+## 13. Team Members<a class="anchor" id="team-members"></a>
 
 | Name                                                                                        |  Email              
 |---------------------------------------------------------------------------------------------|--------------------             
