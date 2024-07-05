@@ -73,7 +73,7 @@ The following machine learning models were used:
 * Naive Bayes: Highest accuracy and F1 score, excellent precision and recall across all classes.
 * SVM: Strong performance with high accuracy and F1 score, consistent across most classes.
 * Random Forest: Decent accuracy and F1 score, good performance in some classes but slightly lower metrics compared to Naive Bayes and Logistic Regression.
-* Recommendation: Naive Bayes stands out as the top-performing model, achieving the highest accuracy and F1 score, making it the recommended choice for this classification task based on the provided data and evaluation results.
+* SVM stands out as the top-performing model, achieving the highest accuracy and F1 score, making it the recommended choice for this classification task based on the provided data and evaluation results.
 
 ## 10. Recommendations
 
@@ -88,7 +88,8 @@ The following machine learning models were used:
 **3.** EDA Techniques
 **4.** Data Cleaning Techniques
 
-## 12 The App was delivered to the  maji Ngondo Stakeholders, for testing of the models and Classifications, link below.
+## 12. The SreamlitApp 
+The app was delivered to the  maji Ngondo Stakeholders, for testing of the models and Classifications, link below
 https://justin9503-news-classifier-base-app-h5anzs.streamlit.app/ 
 
 
