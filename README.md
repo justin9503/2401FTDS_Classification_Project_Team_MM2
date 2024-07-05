@@ -88,8 +88,9 @@ The following machine learning models were used:
 **3.** EDA Techniques
 **4.** Data Cleaning Techniques
 
-**12** https://justin9503-news-classifier-base-app-h5anzs.streamlit.app/ 
-## The App was delivered to the  maji Ngondo Stakeholders, for testing of the models and Classifications.
+## 12 The App was delivered to the  maji Ngondo Stakeholders, for testing of the models and Classifications, link below.
+https://justin9503-news-classifier-base-app-h5anzs.streamlit.app/ 
+
 
 ## 13. Team Members<a class="anchor" id="team-members"></a>
 
