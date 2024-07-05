@@ -57,6 +57,8 @@ The following machine learning models were used:
 * Naive Bayes
 * Support Vector Machine (SVM)
 * Random Forest
+* Adaboost
+* Bagging
 
 ## 8. Model Evaluation Metrics
 
