@@ -88,7 +88,7 @@ The following machine learning models were used:
 **3.** EDA Techniques
 **4.** Data Cleaning Techniques
 
-## 12. The SreamlitApp 
+## 12. The Sreamlit Application
 The app was delivered to the  maji Ngondo Stakeholders, for testing of the models and Classifications, link below
 https://justin9503-news-classifier-base-app-h5anzs.streamlit.app/ 
 
